@@ -261,7 +261,6 @@ Shader "UnityChanToonShader/Toon_ShadingGradeMap" {
             //v.2.0.4
             #pragma multi_compile _IS_CLIPPING_OFF
             #include "UCTS_ShadowCaster.cginc"
-
             ENDCG
         }
 //ToonCoreEnd
