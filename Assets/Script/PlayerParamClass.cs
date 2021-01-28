@@ -14,6 +14,10 @@ public class PlayerParamClass
     /// </summary>
     public PlayerParamClass()
     {
+        InitParam();
+    }
+    public void InitParam()
+    {
         playerLife = 3;
         playerSpeed = 0;
         playerSpeed_LR = 0;

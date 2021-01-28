@@ -55,7 +55,9 @@ public class GoalSystem : MonoBehaviour
 
     void ChangeScrene()
     {
+        paramClass.InitParam();
         SceneManager.LoadScene(nextScene);
+    
     }
 
 }
