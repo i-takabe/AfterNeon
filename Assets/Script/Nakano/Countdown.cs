@@ -26,6 +26,10 @@ public class Countdown : MonoBehaviour
         count = 0;
         
         fade = gameObject.AddComponent<FadeEffect>();
+        fadeImg.color = new Color(fadeImg.color.r,
+                                  fadeImg.color.g,
+                                  fadeImg.color.b,
+                                  1.0f);
     }
 
     // Update is called once per frame
@@ -33,9 +37,9 @@ public class Countdown : MonoBehaviour
     {
         if (fadeImg.color.a > 0f)
             fadeImg.color = new Color(fadeImg.color.r, 
-                                    fadeImg.color.g,
-                                    fadeImg.color.b,
-                                    fade.FadeIN(true));
+                                      fadeImg.color.g,
+                                      fadeImg.color.b,
+                                      fade.FadeIN(true));
         else count += Time.deltaTime;
 
         var img = GetComponent<Image>();
